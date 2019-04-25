@@ -1,3 +1,2 @@
 # hello-world
-simple exercise to get started
-I program apps for Android and now get to know GitHub
+Getting started with github and having fun with the first exercises.
