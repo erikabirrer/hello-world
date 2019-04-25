@@ -1,0 +1,42 @@
+What happens when you initialize a repository? Why do you need to do it?
+	files from that directory and subdirectories will be contained in that repository (git init),	
+	additional a file .git will be created.
+	.git is for Metadata, especially for the history
+	we need the history if we want controll versions (git commit)
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+	Staging area is between the working directory and the repository	
+	with the staging area I control which files should be committed and which files not
+	a commit should contain one logical change,
+	in the staging area I can check if I have changed files with more than one logical change before commit them
+
+
+How can you use the staging area to make sure you have one commit per logical
+change? I check which files are in the staging area before I commit them
+I use git diff with no arguments to compare files in working directory and staging area
+so I see if the changes belong to one logical change
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+	Write new code and try it out without having to worry about the whole program crashing
+	different languages in a programm
+	features which in some cases make sense to have and in others not
+	it is like having different flavors for a programm
+	branches help to switch between those flavors, to keep overview, and that some changes not have to be done twice
+
+How do the diagrams help you visualize the branch structure?
+	it shows at which point branches were built,
+	how they are related to each other or not,
+	and which commits they contain
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+	The result is to make one out of two.
+	All the changes will be taken to one branch.
+	To show to which branch it is pointing
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
+	automatic: is fast and we do not have to think a lot
+	manually: if there is a conflict we have to look at the code (or what ever) to decide which lines to take and which not

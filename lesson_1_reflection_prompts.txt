@@ -1,0 +1,49 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+    
+    With git bash or cmd the command is  FC (for file compare) to display the lines from the compared files which are different.
+    In huge files it is an advantage to display only the lines with differences.
+
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    It helps to keep the overview about changes and processes of files.
+    It is inefficient and  error-prone to track updated files with new names
+    	like new_file and than newer_file and than newest file and than the new newest_file...    
+    it is easy to keep the overview with the history
+    the history tells us who changed the file, when and which part and why
+    the History helps the programmer to find bugs
+    if we have code we do not understand we know who did write the code and when.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    pros You can save at the point where a logical change is complete.
+    So a version is in it complete and make sense.
+    cons You have to think when to save the file and not to forget it at all.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    git is used by programmers and to work with multiple files which affects each other is common
+    so it is important to handle the files together
+    if you write one document, you probably have also just one file or files that to not affect one another,
+    that's a reason to treat them  one by one
+    saving multiple files is more elaborate
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git log lists the commands
+    the ids listed to each command are needed to tell which files to compare
+    with diff you can compare the files
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    with git checkout we can go back to versions made befor making the changes
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    As what it is for: Version Controll. I want to try to manage different Versionsons of my files, go back and forth versions, without losing the track.
